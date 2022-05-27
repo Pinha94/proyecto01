@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="styles/index.css" rel="stylesheet">
+    <title>Mi CV Barby</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap" rel="stylesheet">
+</head>
+<body class="responsive">
+
+        <!--Contactame start-->
+        <section class="secciones" id="contactame">
+            <div class="container">
+                <div class="titulo">
+                    <h2>CONTACTAME</h2>
+                </div>
+                <div class="izq">
+                    <form name="form" action="#" method="post" class="formulario" onsubmit="return validar();">
+                        <div class="campo"><input id="nombre" type="text" name="nombre" placeholder="Ingresa tu nombre"></div>
+                        <div class="campo"><input id="mail" type="mail" name="mail" placeholder="tumail@mail.com"></div>
+                        <div class="campo"><input id="celular" type="number" name="cel" placeholder="1133445566"></div>
+                        <div class="campo mensaje"><textarea id="mensaje" name="mensaje" placeholder="Ingresa tu mensaje aquí"></textarea></div>
+                        <div id="error"></div>
+                        <input class="button" type="submit" value="Enviar">
+                    </form>
+                </div>
+                <div class="der">
+                    <div class="redes">
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-whatsapp"></i></a>
+                    </div>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105073.44366929015!2d-58.503337949736135!3d-34.61566245898787!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1653598847360!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </section>
+        <!--Contactame end-->
+
+    <script src="js/funciones.js"></script>
+    <!-- <script type="text/javascript">
+        function validar (){
+            var form = document.form;
+
+            if(form.nombre.value==0){
+                alert("Debes ingresar tu nombre");
+                form.nombre.value="";
+                form.nombre.focus();
+                return false;
+            }
+
+            if(form.mail.value==0){
+                alert("El campo mail está vacío");
+                form.mail.value="";
+                form.mail.focus();
+                return false;
+            }
+
+            if(form.mensaje.value==0){
+                alert("Debes escribir un mensaje");
+                form.mensaje.value="";
+                form.mensaje.focus();
+                return false;
+            }
+
+            alert("Tu formulario de contacto ha sido enviado.Te contactaré a la brevedad");
+            form.submit();
+        }
+    </script> -->
+    
+</body>
+</html>
